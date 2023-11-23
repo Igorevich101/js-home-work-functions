@@ -64,19 +64,24 @@ let calcVerSwitch = function (num1, num2 , matSign) {
   }
   switch (matSign) {
     case '+': {
-      return (num1 + num2)
+      let result = num1 + num2;
+      break
     }
     case '-': {
-      return (num1 - num2)
+      let result = num1 - num2;
+      break
     }
     case '*': {
-      return (num1 * num2)
+      let result = num1 * num2;
+      break
     }
     case '/': {
-      return(num1 / num2)
+      let result = num1 / num2;
+      break
     }
     default: {
       console.log('null')
     }
   }
+  return result;
 }
