@@ -54,3 +54,29 @@ let calculator = function (num1, num2 , matSign) {
     return result;
   }
 }
+
+let calcVerSwitch = function (num1, num2 , matSign) {
+  if (num1 !== num1 || typeof num1 !== 'number') {
+    return null;
+  }
+  if (num2 !== num2 || typeof num2 !== 'number') {
+    return null;
+  }
+  switch (matSign) {
+    case '+': {
+      return (num1 + num2)
+    }
+    case '-': {
+      return (num1 - num2)
+    }
+    case '*': {
+      return (num1 * num2)
+    }
+    case '/': {
+      return(num1 / num2)
+    }
+    default: {
+      console.log('null')
+    }
+  }
+}
